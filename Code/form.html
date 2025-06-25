@@ -7,12 +7,13 @@
 </head>
 <body>
     
-    <form action="" method="get">
+    <form action="https://api.web3forms.com/submit" method="POST">
+
+        <!-- access Key -->
+        <input type="hidden" name="access_key" value="6813cc94-02a1-4977-8ce0-3a76013a74b7">
+
         <label for="user_name">Username</label>
         <input type="text" id="user_name" name="username" placeholder="Username">
-
-        <label for="password">Enter User Password</label>
-        <input type="password" id="password" name="password">
 
         <label for="subjects">choose Subjets</label>
         <input type="checkbox" name="subjects" class="subjects", value="Python"> Python
@@ -22,8 +23,8 @@
         <input type="radio" name="gender" value="Male" class="gender">Male
         <input type="radio" name="gender" value="Female" class="gender">Female
 
-        <label for="datafile">File Upload</label>
-        <input type="file" name="datafile", id="datafile">
+        <!-- <label for="datafile">File Upload</label>
+        <input type="file" name="datafile", id="datafile"> -->
 
         <input type="submit" value="Send">
     </form>
